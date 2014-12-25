@@ -1,7 +1,7 @@
 Package.describe({
   git: 'https://github.com/gliesesoftware/cfs-filesystem.git',
   name: 'gliese:cfs-filesystem',
-  version: '0.1.2',
+  version: '0.1.3',
   summary: "Gliese favour of the Filesystem storage adapter for CFS (INTERNAL USE ONLY)"
 });
 
@@ -19,6 +19,6 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use(['cfs:filesystem', 'test-helpers', 'tinytest'], 'server');
+  api.use(['gliese:cfs-filesystem', 'test-helpers', 'tinytest'], 'server');
   api.addFiles('tests.js', 'server');
 });
