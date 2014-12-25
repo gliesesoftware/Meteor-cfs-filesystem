@@ -1,8 +1,8 @@
 Package.describe({
-  git: 'https://github.com/CollectionFS/Meteor-cfs-filesystem.git',
-  name: 'cfs:filesystem',
-  version: '0.1.1',
-  summary: "Filesystem storage adapter for CollectionFS"
+  git: 'https://github.com/gliesesoftware/cfs-filesystem.git',
+  name: 'gliese:cfs-filesystem',
+  version: '0.1.2',
+  summary: "Gliese favour of the Filesystem storage adapter for CFS (INTERNAL USE ONLY)"
 });
 
 Npm.depends({
@@ -13,7 +13,7 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use(['cfs:base-package@0.0.27', 'cfs:storage-adapter@0.1.1']);
+  api.use(['gliese:cfs-base@0.0.28', 'gliese:cfs-storage@0.1.2']);
   api.addFiles('filesystem.server.js', 'server');
   api.addFiles('filesystem.client.js', 'client');
 });
